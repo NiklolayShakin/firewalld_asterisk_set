@@ -161,7 +161,7 @@ firewall-cmd --add-rich-rule='rule source ipset=ssh-users port protocol="tcp" po
 
 echo "
 +---------------------------------------+
-|   DON'T FOGET firewall-cmd --reload   |
+|   DON'T FORGET firewall-cmd --reload  |
 |       to apply new rules              |
 +---------------------------------------+
 "
