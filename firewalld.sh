@@ -4,7 +4,7 @@
 CURRENT_SERVICES=$(firewall-cmd --list-services)
 
 for SERVICE in $CURRENT_SERVICES
-do firewall-cmd --remove-service=$SERVICE
+do firewall-cmd --remove-service=$SERVICE --permanent
 echo "Removing $SERVICE service"
 done
 
