@@ -127,37 +127,37 @@ done
 
 #SIP-endpoint access
 echo "----SIP-endpoints----"
-echo "firewall-cmd --add-rich-rule='rule source ipset=phones-mac port protocol="tcp" port="8088" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=phones-mac port protocol="tcp" port="8088" accept' --permanent
-echo "firewall-cmd --add-rich-rule='rule source ipset=phones-mac port protocol="udp" port="69" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=phones-mac port protocol="udp" port="69" accept' --permanent
-echo "firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="5060" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="5060" accept' --permanent
-echo "firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="10000-20000" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="10000-20000" accept' --permanent
-echo "firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="123" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=phones port protocol="udp" port="123" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=phones-mac protocol="tcp" port="8088" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=phones-mac protocol="tcp" port="8088" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=phones-mac protocol="udp" port="69" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=phones-mac protocol="udp" port="69" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="5060" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="5060" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="10000-20000" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="10000-20000" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="123" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=phones protocol="udp" port="123" accept' --permanent
 
 #SIP-provides aceess
 echo "----SIP-providers----"
-echo "firewall-cmd --add-rich-rule='rule source ipset=sip-providers port protocol="udp" port="5060" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=sip-providers port protocol="udp" port="5060" accept' --permanent
-echo "firewall-cmd --add-rich-rule='rule source ipset=sip-providers port protocol="udp" port="10000-20000" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=sip-providers port protocol="udp" port="10000-20000" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=sip-providers protocol="udp" port="5060" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=sip-providers protocol="udp" port="5060" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=sip-providers protocol="udp" port="10000-20000" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=sip-providers protocol="udp" port="10000-20000" accept' --permanent
 
 #AMI
 echo "----AMI----"
-echo "firewall-cmd --add-rich-rule='rule source ipset=ami-users port protocol="tcp" port="5038" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=ami-users port protocol="tcp" port="5038" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=ami-users protocol="tcp" port="5038" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=ami-users protocol="tcp" port="5038" accept' --permanent
 
 #ARI
 echo "----ARI----"
-echo "firewall-cmd --add-rich-rule='rule source ipset=ari-users port protocol="tcp" port="8088" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=ari-users port protocol="tcp" port="8088" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=ari-users protocol="tcp" port="8088" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=ari-users protocol="tcp" port="8088" accept' --permanent
 
 #SSH
-echo "firewall-cmd --add-rich-rule='rule source ipset=ssh-users port protocol="tcp" port="22" accept' --permanent"
-firewall-cmd --add-rich-rule='rule source ipset=ssh-users port protocol="tcp" port="22" accept' --permanent
+echo "firewall-cmd --add-rich-rule='rule source ipset=ssh-users protocol="tcp" port="22" accept' --permanent"
+firewall-cmd --add-rich-rule='rule source ipset=ssh-users protocol="tcp" port="22" accept' --permanent
 
 echo "
 +---------------------------------------+
